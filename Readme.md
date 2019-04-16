@@ -18,7 +18,7 @@ Any questions/suggestions feel free to open an issue/pull request.
 4. Run `yarn install`. If you dont have it, you can get it [here](https://yarnpkg.com/lang/en/docs/install/)
 5. Run `wasm-pack build`
 6. Run `yarn link` inside the `pkg` folder
-7. Run `yarn link smart-panda` on the project root
+7. Run `yarn link ilovewasm` on the project root (this is the project name on the _config.toml_ file)
 8. Run `yarn run start`
 9. Go to `http://localhost:8080/`
 
