@@ -1,48 +1,32 @@
-# Smart Panda 🐼
+# Rust Wasm Template
 
-Smart panda is a simple tetris engine intended (but not limited) to be used as a
-dev environment for Artificial Intelligences. For more information (and a live demo)
-checkout [my personal page](http://h3nnn4n.me/post/smart-panda/).
+When I started messing arround with Rust and webassembly I found the good Rust documentation, however it did not cover
+everything that I needed. In particular I had a really bad time getting wasm to run inside a test environment.
+After many hours of relentless and merciless battle I managed to get it to work. This is a template
+repository with the basic boiler-plate.
 
-Please note that this is my first attempt at doing anything serious with rust and wasm.
-Also I never used webpack before. So expect some nasty things in this repo. Things
-are all over the place. Rust code, javascript files, html and even the output
-of webpack.
-If you are learning (just like I am), this repository may have some bad practices, so beware.
-As I learn more I should make things more tidy around here.
+There is pretty much nothing about unit testing hybrid js/wasm code in the internet (at least that I could find).
+So I hope this can be helpful to somebody ;)
 
-## Features
-
-1. A cool (or silly) name
-2. Implemented in rust 🦀
-3. Compiles to [WASM](https://webassembly.org/)
-4. Has a JavaScript interface
-5. Runs in the browser
-6. ???
-7. Live demo?
+Any questions/suggestions feel free to open an issue/pull request.
 
 ## How to use
 
 1. Clone this repo
 2. Have the [rust toolchain](https://www.rust-lang.org/tools/install) installed
 3. Have [wasm-pack](https://rustwasm.github.io/wasm-pack/installer/) installed
-4. Run `npm install`. If you dont have it, you can get it [here](https://www.npmjs.com/get-npm)
+4. Run `yarn install`. If you dont have it, you can get it [here](https://yarnpkg.com/lang/en/docs/install/)
 5. Run `wasm-pack build`
-6. Run `npm link` inside the `pkg` folder
-7. Run `npm link smart-panda` on the project root
-8. Run `npm run start`
+6. Run `yarn link` inside the `pkg` folder
+7. Run `yarn link smart-panda` on the project root
+8. Run `yarn run start`
 9. Go to `http://localhost:8080/`
 
-## References
-
-There is not a lot about rust and wasm around. So if someone this repository
-becomes helpful for someone than I will be happy :D
+## About Rust -> Wasm
 
 Checkout [this](https://rustwasm.github.io/book/introduction.html) for a simple (yet complete) tutorial of how to make
 a [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using rust/wasm and some
 javascript. A more indepth and broad tutorial is available [here](https://rustwasm.github.io/wasm-pack/book/).
-
-Enjoy.
 
 ## License
 
