@@ -1,7 +1,7 @@
 {
-  "name": "smart-panda",
+  "name": "rust-wasm-template",
   "version": "0.1.0",
-  "description": "An AI playground where JavaScript meets Rust",
+  "description": "A base template with rust, wasm-bindgen, webpack, mocha and babel",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/h3nnn4n/smart-panda"
+    "url": "git+https://github.com/h3nnn4n/Rust-Wasm-Template"
   },
   "keywords": [
     "webassembly",
@@ -19,7 +19,7 @@
     "webpack"
   ],
   "author": "Renan S Silva (h3nnn4n) <uber.renan@gmail.com>",
-  "homepage": "https://github.com/h3nnn4n/smart-panda",
+  "homepage": "https://github.com/h3nnn4n/Rust-Wasm-Template",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
