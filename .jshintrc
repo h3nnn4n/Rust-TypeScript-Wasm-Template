@@ -1,0 +1,11 @@
+{
+    "eqeqeq": true,
+    "freeze": true,
+    "noempty": true,
+    "nonew": false,
+    "undef": true,
+    "unused": true,
+    "esversion": 6,
+    "browser": true,
+    "mocha": true
+}

@@ -1,0 +1,33 @@
+[package]
+name = "ilovewasm"
+version = "0.1.0"
+authors = ["h3nnn4n <uber.renan@gmail.com>"]
+
+[features]
+default = ["console_error_panic_hook"]
+# default = ["console_error_panic_hook", "wee_alloc"]
+
+[dependencies]
+wasm-bindgen = "0.2.37"
+cfg-if = "0.1.7"
+console_error_panic_hook = { version = "0.1.6", optional = true }
+wee_alloc = { version = "0.4.3", optional = true }
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+opt-level = "s"
+lto = true
+
+[dependencies.web-sys]
+version = "0.3.14"
+features = [
+  "console",
+]
+
+[dependencies.rand]
+version = "0.6.5"
+features = [
+  "wasm-bindgen",
+]
