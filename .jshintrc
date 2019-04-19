@@ -7,5 +7,8 @@
     "unused": true,
     "esversion": 6,
     "browser": true,
-    "mocha": true
+    "mocha": true,
+    "globals": {
+        "$": true
+    }
 }

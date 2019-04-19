@@ -4,9 +4,7 @@ const path = require('path');
 
 module.exports = {
   entry: [
-    "core-js/modules/es6.promise",
-    "core-js/modules/es6.array.iterator",
-    "./bootstrap.js"
+    "./bootstrap.ts"
   ],
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -17,6 +15,9 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin(['index.html'])
   ],
+  resolve: {
+    extensions: [".js", ".ts", '.wasm']
+  },
   module: {
     rules: [{
         include: [
@@ -33,6 +34,15 @@ module.exports = {
             plugins: ['@babel/plugin-syntax-dynamic-import']
           }
         }
+      },
+      {
+        test: /\.ts?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.wasm$/,
+        type: "webassembly/experimental"
       }
     ]
   }
