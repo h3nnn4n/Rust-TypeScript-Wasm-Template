@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "es6-promise": "^4.2.6",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "sprintf-js": "^1.1.2",
     "tslib": "^1.9.3"
   }
