@@ -30,3 +30,17 @@ pub fn a_plus_b(a: i32, b: i32) -> i32 {
     a + b
 }
 
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_works_2_plus_2() {
+        assert_eq!(a_plus_b(2, 2), 4);
+    }
+
+    #[test]
+    fn it_works_1_plus_2() {
+        assert_eq!(a_plus_b(1, 2), 3);
+    }
+}
