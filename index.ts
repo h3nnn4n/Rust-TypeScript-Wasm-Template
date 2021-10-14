@@ -1,3 +1,6 @@
+import 'bootstrap';
+import * as $ from "jquery";
+
 var Rust: any;
 
 const init = () => {
