@@ -19,7 +19,7 @@ Any questions/suggestions feel free to open an issue/pull request.
 5. Run `wasm-pack build`
 6. Run `yarn link` inside the `pkg` folder
 7. Run `yarn link ilovewasm` on the project root (this is the project name on the _config.toml_ file)
-8. Run `yarn run start`
+8. Run `yarn run dev-server`
 9. Go to `http://localhost:8080/`
 
 ## About Rust -> Wasm
