@@ -30,4 +30,6 @@ javascript. A more indepth and broad tutorial is available [here](https://rustwa
 
 ## License
 
-Check the _LICENSE_ file for more information.
+This is available under the MIT-0 license. See [LICENSE](LICENSE) for more information.
+
+TLDR: Use it for whatever you wan't, don't bother with attribution.
