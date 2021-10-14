@@ -22,6 +22,11 @@ Any questions/suggestions feel free to open an issue/pull request.
 8. Run `yarn run dev-server`
 9. Go to `http://localhost:8080/`
 
+To run the test suite do the steps 1 to 7 above and then:
+
+1. Run `yarn runtest-server`
+2. Go to `http://localhost:8080/test.html`
+
 ## About Rust -> Wasm
 
 Checkout [this](https://rustwasm.github.io/book/introduction.html) for a simple (yet complete) tutorial of how to make
