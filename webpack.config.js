@@ -13,11 +13,17 @@ module.exports = {
   target: 'web',
   mode: "development",
   plugins: [
-    new CopyWebpackPlugin(['index.html'])
+    new CopyWebpackPlugin({
+        patterns: [
+          { from: "index.html", to: "index.html" },
+        ]
+      }
+    )
   ],
   resolve: {
     extensions: [".js", ".ts", '.wasm']
   },
+  experiments: { asyncWebAssembly: true },
   module: {
     rules: [{
         include: [
@@ -39,10 +45,6 @@ module.exports = {
         test: /\.ts?$/,
         use: 'ts-loader',
         exclude: /node_modules/
-      },
-      {
-        test: /\.wasm$/,
-        type: "webassembly/experimental"
       }
     ]
   }
