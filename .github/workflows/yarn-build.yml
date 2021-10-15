@@ -1,10 +1,10 @@
-on: [push]
+on: [push, pull_request]
 
-name: Rust Tests
+name: Yarn Build
 
 jobs:
   check:
-    name: Rust project
+    name: Yarn Build smoke test
     runs-on: ubuntu-latest
 
     steps:
