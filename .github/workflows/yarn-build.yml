@@ -26,4 +26,10 @@ jobs:
       - name: Setup wasm-pack
         run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 
+      - name: Build wasm code
+        run: |
+          wasm-pack build
+          cd pkg && yarn link
+          yarn link ilovewasm
+
       - run: yarn build
