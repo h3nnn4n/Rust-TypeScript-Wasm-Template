@@ -9,9 +9,21 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
           cache: 'yarn'
+
       - run: yarn install
+
+      - name: Setup Rust
+        uses: actions-rs/toolchain@v1
+        with:
+            toolchain: stable
+            profile: minimal
+
+      - name: Setup wasm-pack
+        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+
       - run: yarn build
